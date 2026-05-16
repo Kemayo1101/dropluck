@@ -44,7 +44,7 @@ export default function ComptePage() {
           password,
           options: {
             data: { full_name: name },
-            emailRedirectTo: 'http://localhost:3000/compte'
+            emailRedirectTo: `${window.location.origin}/compte`
           }
         })
         if (error) setError(error.message)
